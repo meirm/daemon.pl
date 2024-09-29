@@ -18,7 +18,7 @@ This simple Perl script allows you to daemonize any script or command, running i
 No installation is necessary. Simply download or copy the script to your desired location and make it executable:
 
 ```bash
-chmod +x daemonize.pl
+chmod +x daemon.pl
 ```
 
 ## Usage
@@ -26,7 +26,7 @@ chmod +x daemonize.pl
 The utility can be run with any script or command as follows:
 
 ```bash
-./daemonize.pl <command> [arguments]
+./daemon.pl <command> [arguments]
 ```
 
 ### Example
@@ -34,7 +34,7 @@ The utility can be run with any script or command as follows:
 To run a script named `my_script.sh` in the background:
 
 ```bash
-./daemonize.pl /path/to/my_script.sh arg1 arg2
+./daemon.pl /path/to/my_script.sh arg1 arg2
 ```
 
 This will daemonize `my_script.sh`, printing the process ID (PID) to the terminal and then exiting.
@@ -44,7 +44,7 @@ This will daemonize `my_script.sh`, printing the process ID (PID) to the termina
 To run a Python script named `example.py` with arguments:
 
 ```bash
-./daemonize.pl python3 /path/to/example.py --option value
+./daemon.pl python3 /path/to/example.py --option value
 ```
 
 ## How It Works
